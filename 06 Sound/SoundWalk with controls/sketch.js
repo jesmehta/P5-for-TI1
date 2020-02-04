@@ -40,7 +40,7 @@ function setup() {
   btPlayRev.mouseClicked(flagRev);
   btPlayRandom.mouseClicked(flagRandom);
 
-noStroke();
+  noStroke();
 }
 
 function draw() {
