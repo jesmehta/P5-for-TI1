@@ -1,105 +1,39 @@
-let immigrant;
-let mySong;
-let len;
-let x0,y0;
+let song;
+let ran;
 
-let btPlay;
-let btPlayRev;
-let btPlayRandom;
-let fPlay, fRev, fRandom;
-
-function preload()
-{
-  soundFormats('mp3');
-  immigrant = loadSound('immigrant.mp3');
-
+function preload() {
+  soundFormats("mp3");
+  song = loadSound("immigrant.mp3");
 }
 
-
 function setup() {
-  createCanvas(300,300);
-  background(220);
-
-
-  immigrant.playMode('restart');
-  len = immigrant.duration();
-
-  fPlay = false;
-  fRev = false;
-  fRandom = false;
-
-  x0 = random(0,width);
-  y0 = 0;
-  createP(""); //moves buttons below canvas
-
-  btPlay = createButton("Play Song");
-  btPlayRev = createButton("Play Reverse");
-  btPlayRandom = createButton("Play RandomWalk");
-
-  btPlay.mouseClicked(flagPlay);
-  btPlayRev.mouseClicked(flagRev);
-  btPlayRandom.mouseClicked(flagRandom);
-
-  noStroke();
+  createCanvas(400, 400);
+  ran = false;
 }
 
 function draw() {
+  background(220);
 
-  if(fRandom){
-    let k = int(random(0,len-1));
-    immigrant.jump(k, 1)
-  }
-
-  let x = random(-3,3);
-  let y = random(0,3);
-  x0 += x;
-  y0 +=y;
-
-  fill(255,30);
-  ellipse(x0,y0,10,10);
-  fill(255);
-  ellipse(x0,y0,2,2);
-
-  if(x0 > width || x0 < 0 || y0 > height || y0< 0)
+  if(ran==true)
   {
-    x0 = random(0,width);
-    y0 = 0;
+  let r = int(random(0,song.duration()-1));
+  song.jump(r,1);
   }
 }
-//
-// function mouseClicked() {
-//
-// }
 
-function flagPlay()
-{
-  if(fPlay)
-  {
-    immigrant.play();
+function keyPressed() {
+  if (key == "a") {
+    song.play();
   }
-  else {
-    immigrant.stop();
+  if (key == "s") {
+    song.stop();
   }
-  fPlay = !fPlay;
+  if (key == "r") {
+    song.reverseBuffer();
+    song.play();
+  }
 }
-function flagRev()
-{
-  fRev = !fRev;
-  immigrant.reverseBuffer();
 
-  if(fRev)
-  {
-    // immigrant.reverseBuffer();
-    immigrant.play();
-    immigrant.reverseBuffer();
-  }
-  else {
-    immigrant.stop();
-  }
-  fRev = !fRev;
-}
-function flagRandom()
-{
-
-  fRandom = !fRandom;
+function mouseClicked() {
+ran = !ran;
 }
