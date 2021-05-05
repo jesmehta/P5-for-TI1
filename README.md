@@ -3,17 +3,17 @@
  
 links using % and 20
 
-[PlanArray](https://jesmehta.github.io/P5-for-TI1/blob/master/01_Simple%20examples/Array%20Planets/index.html)
+[PlanArray](https://jesmehta.github.io/P5-for-TI1/01_Simple%20examples/Array%20Planets/index.html)
 
-[BouncingRect](https://jesmehta.github.io/P5-for-TI1/tree/master/01_Simple%20examples/Bouncing%20rectangles)
+[BouncingRect](https://jesmehta.github.io/P5-for-TI1/01_Simple%20examples/Bouncing%20rectangles)
 
-[Simple Sketches](https://jesmehta.github.io/P5-for-TI1/tree/master/01_Simple%20examples)
+[Simple Sketches](https://jesmehta.github.io/P5-for-TI1/01_Simple%20examples)
 
 Spaces
  
-[PlanArray](https://jesmehta.github.io/P5-for-TI1/blob/master/01_Simple examples/Array Planets/index.html)
+[PlanArray](https://jesmehta.github.io/P5-for-TI1/01_Simple examples/Array Planets/index.html)
 
-[BouncingRect](https://jesmehta.github.io/P5-for-TI1/tree/master/01_Simple examples/Bouncing rectangles)
+[BouncingRect](https://jesmehta.github.io/P5-for-TI1/01_Simple examples/Bouncing rectangles)
 
-[Simple Sketches](https://jesmehta.github.io/P5-for-TI1/tree/master/01_Simple examples)
+[Simple Sketches](https://jesmehta.github.io/P5-for-TI1/01_Simple examples)
  
